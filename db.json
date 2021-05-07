@@ -15,13 +15,13 @@
     {
       "text": "Add",
       "day": "One",
-      "reminder": false,
+      "reminder": true,
       "id": 3
     },
     {
       "text": "Task 2",
       "day": "Sdasd",
-      "reminder": true,
+      "reminder": false,
       "id": 4
     }
   ]
