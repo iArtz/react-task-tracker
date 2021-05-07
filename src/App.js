@@ -7,6 +7,7 @@ import AddTask from './components/AddTask'
 const __API__ = 'http://localhost:5000/tasks'
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true)
   const [showAddTask, setShowAddTask] = useState(false)
   const [tasks, setTasks] = useState([])
 
@@ -14,6 +15,7 @@ function App() {
     const getTasks = async () => {
       const tasksFromServer = await fetchTasks()
       setTasks(tasksFromServer)
+      setIsLoading(false)
     }
     getTasks()
   }, [])
@@ -67,7 +69,9 @@ function App() {
         showAdd={showAddTask}
       />
       {showAddTask && <AddTask onAdd={addTask} />}
-      {tasks.length > 0 ? (
+      {isLoading ? (
+        'Loading...'
+      ) : tasks.length > 0 ? (
         <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
       ) : (
         'No Tasks To Show'
