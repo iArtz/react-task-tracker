@@ -11,6 +11,18 @@
       "text": "B",
       "day": "Feb 6th at 3:30pm",
       "reminder": false
+    },
+    {
+      "text": "Add",
+      "day": "One",
+      "reminder": true,
+      "id": 3
+    },
+    {
+      "text": "Task 2",
+      "day": "Sdasd",
+      "reminder": false,
+      "id": 4
     }
   ]
 }
