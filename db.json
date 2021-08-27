@@ -10,19 +10,13 @@
       "id": 2,
       "text": "B",
       "day": "Feb 6th at 3:30pm",
-      "reminder": false
+      "reminder": true
     },
     {
-      "text": "Add",
-      "day": "One",
-      "reminder": true,
-      "id": 3
-    },
-    {
-      "text": "Task 2",
-      "day": "Sdasd",
+      "text": "C",
+      "day": "Feb 6th at 4:30pm",
       "reminder": false,
-      "id": 4
+      "id": 3
     }
   ]
 }
